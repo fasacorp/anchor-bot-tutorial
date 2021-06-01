@@ -7,7 +7,7 @@ This tutorial provided instructions on how to get anchor-bot from Romain Lanz to
 > ⚠️ Running anchor bot on windows is inherently more risky than running on a linux box as linux is much more stable. I recommend running the anchor bot on a headless linux installation on raspeberry pi or nuc or similar. 
 > You should also consider the security of your seed when running on a windows machine. It's not safe as your seed is stored in clear.
 
-YOU ARE RUNNING THE BOT AT YOUR OWN RISK AN I DECLINE EXPLICITELY ANY LOSS THAT MAY ARISE DUE TO THIS TUTORIAL.
+YOU ARE RUNNING THE BOT AT YOUR OWN RISK AND I DECLINE EXPLICITELY ANY LOSS THAT MAY ARISE DUE TO THIS TUTORIAL.
 
 ## Software requirements
 On windows you will need:

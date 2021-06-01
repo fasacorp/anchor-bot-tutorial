@@ -4,7 +4,8 @@
 
 This tutorial provided instructions on how to get anchor-bot from Romain Lanz to run on a regular window machine.
 
-> ⚠️ Running anchor bot on windows is inherently more risky than running on a linux box as linux is much more stable. I recommend running the anchor bot on a headless linux installation on raspeberry pi or nuc or similar.
+> ⚠️ Running anchor bot on windows is inherently more risky than running on a linux box as linux is much more stable. I recommend running the anchor bot on a headless linux installation on raspeberry pi or nuc or similar. 
+> You should also consider the security of your seed when running on a windows machine. It's not safe as your seed is stored in clear.
 
 YOU ARE RUNNING THE BOT AT YOUR OWN RISK AN I DECLINE EXPLICITELY ANY LOSS THAT MAY ARISE DUE TO THIS TUTORIAL.
 
@@ -74,6 +75,41 @@ PS > cd '.\Anchor bot\anchor-borrow-bot-main\'
 PS > npm install
 ```
 
-Now we will test that t
+Now we will need to update the configuration file you need to copy it as follow.
 
+```
+PS C:\Users\romain\Documents\Anchor bot\anchor-borrow-bot-main> cp .\.env.example .env
+```
+
+Open the configuration file '.en' in your favourite text editor. You need to edit the following lines:
+
+```
+# This should be your seed, the 24 words
+KEY=""
+```
+
+You need uncomment (Removing th #) the following line:
+```
+# LCD_URL='https://lcd.terra.dev'
+# CHAIN_ID='columbus-4'
+```
+
+And you need to comment (add a #) to the following line:
+```
+LCD_URL='https://tequila-lcd.terra.dev'
+CHAIN_ID='tequila-0004'
+```
+
+Safe it !
+
+## running the bot
+
+You can run the bot using the following command line:
+```
+PS > npm start run
+```
+
+## adding API key to telegram.
+
+Work in progress
 

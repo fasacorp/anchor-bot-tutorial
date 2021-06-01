@@ -1,4 +1,4 @@
-# Anchor bot tutorial from dummies
+# Anchor bot tutorial for dummies
 
 ## Risks disclaimer
 
